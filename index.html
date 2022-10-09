@@ -8,8 +8,39 @@
     <meta charset="UTF-8">
     <meta name="title" content="ReTrueque">
     <meta name="description" content="Pagina de Trueques y">
+
     <!--LLAMAR A LA HOJA DE ESTILOS CSS-->    
-    <link href="estilos.css" rel="stylesheet">    
+    <link href="" rel="stylesheet">  
+
+    <!--DECLARO ESTILO PARA -->
+    <style>
+       
+        .contenido{
+            width:100%;
+            display:flex;
+            flex-wrap:wrap;
+            font-style: normal;
+            font-size: medium;
+            font: bold;
+        }
+
+        .inner{
+            margin:2px;
+            flex:1;
+            min-width:200px;
+            background:rgb(243, 147, 3);
+            padding:10px;
+            align-items: center;
+            text-align: center;
+            font-family: Arial;
+        }
+    
+        @media screen and (max-width: 480px) {
+          .contenido{
+            grid-template-columns: 1fr;
+            color: red;}
+        }
+      </style>  
 </head>
 <!--probando cambios en github-->
 <!--probando desde github-->
@@ -31,26 +62,85 @@
                     </button>
                 </td>
             </tr>
-        </table>
-        <h1>Retrueque.com.ar</h1>      
-    </header>    
+        </table>     
+    </header>
+
+    <!--BARRA DE NAVEGACION-->
     <nav>
-        <a href="#">IR SECCIÓN 2</a>
-        <a href="#">IR SECCIÓN 3</a>
+        <div class="col-md-12">
+            <hr>
+            Usted está aquí:   / 
+            <a href="/list">Index</a> 
+            <span class="divider">
+                <img alt=""src="imagenes/arrow.png">
+            </span>
+        </div>
     </nav>
-    <section>      
-        <article>
-            <h2>CONTENIDO PRINCIPAL</h2>
-            <p>Este es el contenido principal de mi web.</p>      
-        </article>      
-    </section>
-    <aside>
-        <h3>Testimonios</h3>
-        <p>Me gusta mucho esta página.</p>
-    </aside>
+
+    <main role="main">
+        <p></p>
+        <hr>
+        <section>
+            <div class='contenedor'>
+                <h3> Ultimos Productos para ReTrueque</h3>
+                <div class="contenido">
+                    <div class="inner">
+                        <h4>PRODUCTO 1</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                        <p>
+                        <img src="imagenes/quiero retrueque.jpg" alt="75" width="100">
+                    </div>
+                    <div class="inner">
+                        <h4>PRODUCTO 2</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                    </div>
+                    <div class="inner">
+                        <h4>PRODUCTO 3</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                    </div>
+                    <div class="inner">
+                        <h4>PRODUCTO 4</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                    </div>                
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class='contenedor'>
+                <h3> ReTrueques cerca tuyo</h3>
+                <div class="contenido">
+                    <div class="inner">
+                        <h4>PRODUCTO 1</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                    </div>
+                    <div class="inner">
+                        <h4>PRODUCTO 2</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                    </div>
+                    <div class="inner">
+                        <h4>PRODUCTO 3</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                    </div>
+                    <div class="inner">
+                        <h4>PRODUCTO 4</h4>
+                        <img src="imagenes/no_img_avaliable.jpg" alt="150" width="200">
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside aria-labelledby="sidebar1"> 
+        <h2 id="sidebar1">Título sidebar</h2> 
+        <p>Contenido sidebar</p>
+    </aside> 
+
 
     <!--PIE DE PAGINA-->
     <footer>
+        <hr> 
         <h4>Redes sociales</h4>
         <a href="#">Facebook</a>
         <a href="#">Tiwtter</a>
